@@ -67,9 +67,11 @@ export default function Login() {
 
         // Redirigir según el rol
         setTimeout(() => {
-          if (data.role === "admin") {
+          const role = data.user.role // <--- aseguramos el valor correcto
+
+          if (role === "admin") {
             router.push("/admin/dashboard")
-          } else if (data.role === "police") {
+          } else if (role === "police") {
             router.push("/police/dashboard")
           } else {
             router.push("/dashboard")
