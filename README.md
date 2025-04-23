@@ -96,26 +96,26 @@ Administrador | admin@example.com | admin123 <br/>
 Policía | policia@example.com | policia123 <br/>
 
 > [!IMPORTAN]
-> Posibles Errores y Soluciones
-> API no responde: Verifica npm run start, la IP correcta y red compartida.
-> Permiso de ubicación: Verifica que el GPS esté activo y permisos concedidos.
-> Timeout: Revisa conexión y aumenta el timeout en Retrofit.
+> Posibles Errores y Soluciones <br/>
+> API no responde: Verifica npm run start, la IP correcta y red compartida. <br/>
+> Permiso de ubicación: Verifica que el GPS esté activo y permisos concedidos. <br/>
+> Timeout: Revisa conexión y aumenta el timeout en Retrofit. <br/>
 
 > [!IMPORTAN]
-> Futuras Mejoras
-> Notificaciones push en tiempo real.
-> Geolocalización en segundo plano.
-> Chat en tiempo real entre usuarios y autoridades.
-> Estadísticas de alertas y seguridad.
-> Opciones de accesibilidad y diseño.
+> Futuras Mejoras <br/>
+> Notificaciones push en tiempo real. <br/>
+> Geolocalización en segundo plano. <br/>
+> Chat en tiempo real entre usuarios y autoridades. <br/>
+> Estadísticas de alertas y seguridad. <br/>
+> Opciones de accesibilidad y diseño.<br/>
 
 > [!NOTE]
-> Licencia
-> Este proyecto fue desarrollado como iniciativa académica para el SENA por los estudiantes:
-> Andrés Monsalve Pérez
-> Dayan Berrio Toro
-> Juan David Suárez
-> Santiago Gallego Gutiérrez
+> Licencia <br/>
+> Este proyecto fue desarrollado como iniciativa académica para el SENA por los estudiantes: <br/>
+> Andrés Monsalve Pérez <br/>
+> Dayan Berrio Toro <br/>
+> Juan David Suárez <br/>
+> Santiago Gallego Gutiérrez <br/>
 
 ---
 
