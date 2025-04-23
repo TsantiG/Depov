@@ -15,6 +15,9 @@ DEPOV (Despliegue de Emergencia para Operaciones de Verificación) es un sistema
 
 ---
 
+> [!IMPORTANT]
+> En la documentacion encontrara toda la informacion adicional necesaria referente al proyecto, en la presentacion pdf se encontrara los diagramas y informacion adicional, para obtener informacion mas especifica entrar al archivo pdf proyecto final.
+
 ## 📦 Estructura del Proyecto
 
 depov_web/ 
