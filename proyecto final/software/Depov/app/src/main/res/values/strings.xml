@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Depov</string>
+    <string name="text_login">  Bienvenida</string>
+    <string name="text_email">Ingrese su correo</string>
+    <string name="text_pass">Ingrese su contraseña</string>
+    <string name="text_btn_login">"  Ingresar"</string>
+    <string name="text_login_register">"   Registrate"</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="register_title">Registro</string>
+
+    <string name="loading">Cargando...</string>
+    <string name="error_register">Error al registrar usuario</string>
+    <string name="back">Volver</string>
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="text_register">Crea tu Cuenta</string>
+    <string name="text_btn_register">Crear</string>
+    <string name="text_descripcion_home">Bienvenid@ a Devop, una aplicación creada con el propósito de ofrecerte la seguridad y tranquilidad que mereces en tu día a día.</string>
+    <string name="text_home_user_bienvenida">Bienvenid@</string>
+    <string name="text_name_user_conf">user name</string>
+    <string name="back_button">Back</string>
+    <string name="user_data">User Data</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="save_user_data">Save User Data</string>
+    <string name="sensitive_data">Sensitive Data</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="id_number">ID Number</string>
+    <string name="save_sensitive_data">Save Sensitive Data</string>
+    <string name="logout">Logout</string>
+    <string name="registering">Registrando...</string>
+    <string name="registration_successful">Registro exitoso</string>
+    <string name="register">Registrarse</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="invalid_password">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="button_description">descripcion de boton</string>
+    <string name="indicador_de_accion">Indicador de acción</string>
+    <string name="presiona_aqui_para_alertar_a_las_utoridades">Presiona aquí para alertar las utoridades</string>
+
+    <string-array name="genero_options">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+        <item>Prefiero no decirlo</item>
+    </string-array>
+</resources>

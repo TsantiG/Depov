@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:fillViewport="true"
+    tools:context=".HomeUserActivity">
+
+
+
+            <TextView
+                android:id="@+id/tv_home_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Bienvenid@"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_button_shield"
+                android:layout_width="273dp"
+                android:layout_height="203dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_home_user">
+
+                <ImageButton
+                    android:id="@+id/btn_shield_icon_home_user"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/button_selector"
+                    android:contentDescription="@string/button_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/depov123"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:elevation="8dp"
+                    android:stateListAnimator="@anim/button_press_animator" />
+
+                <ImageView
+                    android:id="@+id/icon_indicator"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_arrow_up"
+                    android:contentDescription="@string/indicador_de_accion"
+                    app:layout_constraintBottom_toTopOf="@id/tv_button_shield"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:alpha="0.8" />
+
+                <TextView
+                    android:id="@+id/tv_button_shield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:text="presiona aqui (Alerta)"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_shield_icon_home_user" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_map_home_user"
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/rose_intence"
+        app:layout_constraintTop_toBottomOf="@+id/cl_button_shield"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="2dp"
+        android:transitionName="mapTransition">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+            <!--
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/sv_home_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_20"
+                        android:layout_marginTop="32dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp"
+                        app:cardBackgroundColor="#1FFFFFFF"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_map_home_user"
+                        android:animateLayoutChanges="true">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/dp_16">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="16dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Comentarios"
+                                    android:textColor="@color/rose_intence"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:text="Ejemplo de comentario 1"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:padding="8dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:text="Ejemplo de comentario 2"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:padding="8dp" />
+
+
+
+                            </LinearLayout>
+                        </ScrollView>
+                    </com.google.android.material.card.MaterialCardView>
+            -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_home_user_menu"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_marginTop="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/back_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#1FFFFFFF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_user_menu"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="-20dp"
+                    android:background="@drawable/circle_button_background"
+                    android:elevation="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/back_menu"
+                    app:layout_constraintStart_toStartOf="@+id/back_menu"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_info_user_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-20dp"
+                    android:background="@drawable/circle_button_background"
+                    android:elevation="8dp"
+                    android:src="@drawable/icon_deslogueo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_user_menu"
+                    app:layout_constraintStart_toStartOf="@+id/back_menu"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_conf_user_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-20dp"
+                    android:background="@drawable/circle_button_background"
+                    android:elevation="8dp"
+                    android:src="@drawable/tuerca"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_user_menu"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

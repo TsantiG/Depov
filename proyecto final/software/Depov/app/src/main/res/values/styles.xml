@@ -1,0 +1,30 @@
+<resources>
+    <!-- Tema base de la aplicación -->
+    <style name="Theme.Material3.DynamicColors.Dark" parent="Theme.Material3.Dark">
+        <!-- Personaliza tu tema aquí -->
+        <item name="colorPrimary">@color/accent_color</item>
+        <item name="colorPrimaryDark">@color/accent_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+    <!-- Estilos personalizados para EditText -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <!-- Estilos personalizados para Button -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/fondo</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
