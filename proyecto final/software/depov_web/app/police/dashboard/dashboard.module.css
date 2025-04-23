@@ -1,0 +1,343 @@
+.pageTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    color: var(--foreground);
+  }
+  
+  .dashboardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .dashboardGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .alertsCard {
+    border-color: rgba(239, 68, 68, 0.3);
+  }
+  
+  .alertsHeader {
+    background-color: rgba(239, 68, 68, 0.1);
+  }
+  
+  .alertsHeaderContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .alertsTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .bellIcon {
+    color: var(--destructive);
+  }
+  
+  .alertBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--destructive);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    margin-left: 0.5rem;
+  }
+  
+  .tableContainer {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .table th {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    background-color: var(--muted);
+  }
+  
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .nameCell {
+    font-weight: 500;
+  }
+  
+  .actionsColumn {
+    width: 100px;
+    text-align: right;
+  }
+  
+  .actionsCell {
+    text-align: right;
+  }
+  
+  .actionButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .viewButton,
+  .attendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .viewButton:hover {
+    background-color: var(--muted);
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .attendButton {
+    color: var(--success);
+  }
+  
+  .attendButton:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+    border-color: var(--success);
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+  }
+  
+  .statusPending {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--destructive);
+  }
+  
+  .statusSuccess {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+  }
+  
+  .emptyState {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted-foreground);
+  }
+  
+  .mapContent {
+    padding: 0;
+  }
+  
+  .mapContainer {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 var(--radius) var(--radius);
+    overflow: hidden;
+  }
+  
+  .detailsCard {
+    margin-bottom: 2rem;
+  }
+  
+  .detailsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .detailsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .detailsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .detailsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .detailItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 640px) {
+    .detailItem {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  }
+  
+  .detailLabel {
+    font-weight: 600;
+    min-width: 100px;
+  }
+  
+  .phoneLink {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .phoneLink:hover {
+    text-decoration: underline;
+  }
+  
+  .phoneIcon {
+    margin-left: 0.25rem;
+  }
+  
+  .contactsSection,
+  .stationsSection {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactsGrid,
+  .stationsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .contactsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .stationsGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .contactCard,
+  .stationCard {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  .contactName,
+  .stationName {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .contactPhone,
+  .stationPhone {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+  
+  .contactPhone:hover,
+  .stationPhone:hover {
+    text-decoration: underline;
+  }
+  
+  .stationDistance {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-bottom: 0.25rem;
+  }
+  
+  .actionSection {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  .attendAlertButton {
+    background-color: var(--success);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .attendAlertButton:hover {
+    background-color: var(--success-hover);
+  }
+  
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+  }
+  
+  .loadingSpinner {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary);
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 0.5rem;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

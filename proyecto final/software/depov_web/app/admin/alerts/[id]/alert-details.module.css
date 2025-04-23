@@ -1,0 +1,214 @@
+.header {
+    margin: 1.5rem 0;
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .backIcon {
+    stroke-width: 2;
+  }
+  
+  .pageTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+  }
+  
+  .alertGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .alertGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .statusSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .statusInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .statusLabel {
+    font-weight: 600;
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+  }
+  
+  .statusPending {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+  }
+  
+  .statusSuccess {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+  }
+  
+  .attendButton {
+    background-color: var(--success);
+    color: white;
+  }
+  
+  .attendButton:hover {
+    background-color: var(--success-hover);
+  }
+  
+  .infoSection {
+    margin-bottom: 1.5rem;
+  }
+  
+  .infoItem {
+    margin-bottom: 0.5rem;
+  }
+  
+  .infoLabel {
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .userSection,
+  .contactsSection,
+  .stationsSection {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contactsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .contactsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .contactCard {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  .contactName {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .contactPhone {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+  
+  .stationsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .stationCard {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  .stationName {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stationDistance,
+  .stationPhone {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-bottom: 0.25rem;
+  }
+  
+  .mapContent {
+    padding: 0;
+  }
+  
+  .mapContainer {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 var(--radius) var(--radius);
+    overflow: hidden;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+  }
+  
+  .loadingSpinner {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary);
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 0.5rem;
+  }
+  
+  .errorContainer {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .errorTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

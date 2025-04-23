@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF2457;
+  --primary-foreground: #ffffff;
+  --secondary: #FF2457;
+  --secondary-foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #000000;
+  --muted: #f3f4f6;
+  --muted-foreground: #000000;
+  --accent: #FF2457;
+  --accent-foreground: #ffffff;
+  --destructive: #FF2457;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #FF2457;
+  --radius: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0.5rem;
+  }
+}
+

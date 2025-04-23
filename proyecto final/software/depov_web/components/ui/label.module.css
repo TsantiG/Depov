@@ -1,0 +1,16 @@
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--foreground);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .required::after {
+    content: "*";
+    color: var(--destructive);
+    margin-left: 0.25rem;
+  }
+  
+  
