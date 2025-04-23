@@ -95,13 +95,13 @@ Usuario | juan@example.com | password123  <br/>
 Administrador | admin@example.com | admin123 <br/>
 Policía | policia@example.com | policia123 <br/>
 
-> [!IMPORTAN]
+> [!INPORTAN]
 > Posibles Errores y Soluciones <br/>
 > API no responde: Verifica npm run start, la IP correcta y red compartida. <br/>
 > Permiso de ubicación: Verifica que el GPS esté activo y permisos concedidos. <br/>
 > Timeout: Revisa conexión y aumenta el timeout en Retrofit. <br/>
 
-> [!IMPORTAN]
+> [!INPORTAN]
 > Futuras Mejoras <br/>
 > Notificaciones push en tiempo real. <br/>
 > Geolocalización en segundo plano. <br/>
