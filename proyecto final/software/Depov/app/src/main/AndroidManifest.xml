@@ -57,7 +57,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDrXihKfa7-QyDDLmUw3f9ROC3ZDMonsMQ" />
+            android:value="se borro la api key por seguridad, ingrese su propia key de google con servicio de hubicacion" />
 
         <activity
             android:name=".LoginActivity"
